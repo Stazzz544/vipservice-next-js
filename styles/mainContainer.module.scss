@@ -1,0 +1,20 @@
+.header{
+    height: 60px;
+    background: #5C87DB;
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    color: #ffffff;
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1100px;
+    background: #ffffff;
+    min-height: calc(100vh - 60px);
+    padding: 30px;
+}

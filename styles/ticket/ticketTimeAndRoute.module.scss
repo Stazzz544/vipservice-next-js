@@ -1,0 +1,103 @@
+.departure,
+.arrival {
+}
+
+.departureTime,
+.arrivalTime {
+  color: #232323;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.departureCity,
+.arrivalCity {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5c5c5c;
+}
+
+.departureDate,
+.arrivalDate {
+  margin-top: 1px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5c5c5c;
+}
+
+.routeFlex {
+  max-width: 297px;
+  padding: 0px 28px 0px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}
+
+
+
+.airportFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.airportName {
+  color: #b7bac1;
+}
+
+.timeLineWraper {
+  margin-top: 7px;
+  padding: 0px 10px;
+}
+
+.timeLine {
+  position: relative;
+  height: 1px;
+  background-color: #b7bac1;
+  width: 100%;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 8px;
+    height: 8px;
+    background: #c4c4c4;
+    border-radius: 50%;
+  }
+  &::before {
+    right: -0.5px;
+    left: auto;
+  }
+}
+
+.travelTime {
+  margin-top: 10px;
+  text-align: center;
+  color: #b7bac1;
+  font-size: 14px;
+}
+
+.luggageWrapper {
+  position: relative;
+  top: -40px;
+  display: flex;
+  column-gap: 10px;
+  margin-left: 34px;
+  align-items: flex-end;
+}
+
+.luggage {
+  width: 20px;
+  height: 40px;
+  fill: #8ba5d8;
+  transform: translateY(3px);
+}
+
+.handLuggage {
+  width: 20px;
+  height: 20px;
+  fill: #8ba5d8;
+}

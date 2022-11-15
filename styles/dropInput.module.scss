@@ -1,0 +1,53 @@
+.inputWrapper{
+    position: relative;
+}
+
+.cityField{
+    width: 100%;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px;
+    line-height: 16px;
+    color: #5C5C5C;
+    &::placeholder{
+        color: #B7BAC1;
+    }
+    &:focus{
+        box-shadow: 0px 0px 2px rgba(92, 135, 219, 0.5);
+    }
+}
+
+
+.dropList{
+    display: none;
+    position: absolute;
+    top:40px;
+    box-shadow: 0px 0px 14px rgb(112 121 153 / 30%);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    &:hover{
+    display: block;
+    }
+}
+
+
+.helpText{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 13px;
+    top: -14px;
+    left: 0;
+}
+
+.dropItemWrapper{
+    background:#ffffff;
+    padding: 10px 10px;
+    cursor: pointer;
+    &:hover{
+        background: rgb(241, 241, 241)
+    }
+}

@@ -1,0 +1,77 @@
+.panelWrapper {
+  position: relative;
+  max-width: 963px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  border-radius: 15px;
+}
+
+.fieldsWrapper {
+  padding: 30px;
+  background: #5c87db;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  border-radius: 15px 15px 0 0;
+}
+
+.buttonWrapper {
+  padding: 23px 29px 23px 0px;
+}
+
+.dashLine {
+  border: 1px dashed #ffffff;
+  position: absolute;
+  width: 25px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+}
+
+.flexGroup {
+  flex: 1 1;
+  display: flex;
+  gap: 25px;
+  min-width: 330px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.flexItem {
+  flex: 1 1;
+  //z-index: 3;
+}
+
+.loaderWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 200;
+}
+.error {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: rgb(247, 121, 18);
+  line-height: 27px;
+}
+
+
+@media(max-width: 520px) {
+    .flexGroup{
+        flex-direction: column;
+        min-width: 200px;
+    }
+    .dashLine{
+        transform: translate(-50%, 50%) rotate(90deg);
+    }
+    .buttonWrapper{
+        padding: 23px 23px;
+    }
+}

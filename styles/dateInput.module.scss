@@ -1,0 +1,39 @@
+.dateInputWrapper{
+    position: relative;
+
+}
+
+.dateField{
+    width: 100%;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    & div{
+        padding: 0px;
+        flex-direction: row-reverse;
+    & input {
+        padding: 10px 12px 10px 17px;
+        font-weight: 700;  
+        color: #5C5C5C;
+      }
+    }
+    & fieldset{
+        border: none;
+        padding: 0;
+    }
+    & button{
+        padding: 0 4px 0 4px;
+    }
+    & svg {
+        fill: inherit
+    }
+}
+
+.helpText{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 13px;
+    top: -14px;
+    left: 0;
+}

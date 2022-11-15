@@ -1,0 +1,20 @@
+.ticketBtn {
+    padding: 5px 8px 7px 3px;
+    color: #5c5c5c;
+    font-weight: 500;
+    border: 1px solid #b7bac1;
+    display: flex;
+    column-gap: 5px;
+    background: transparent;
+    border-radius: 10px;
+    align-items: flex-end;
+  }
+  
+  .ticketBtnDepartureTime {
+    font-size: 18px;
+    transform: translateY(1.5px);
+  }
+  
+  .ticketBtnArrivalTime {
+    font-size: 14px;
+  }
