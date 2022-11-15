@@ -17,4 +17,11 @@
     background: #ffffff;
     min-height: calc(100vh - 60px);
     padding: 30px;
+    overflow: auto;
+}
+
+@media(max-width: 500px) {
+    .link{
+    font-size: 18px;
+    }
 }
