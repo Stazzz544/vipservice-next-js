@@ -1,23 +1,21 @@
 import { FC } from "react";
-import { ticketViewPrice } from "../../common/cummonFunc";
+import { ticketViewPrice } from "../../common/commonFunc";
 import { ITwoWayTicket } from "../../models/ITicket";
 import s from "../../styles/ticket/twoWayTicket.module.scss";
 import TicketTimeAndRoute from "./TicketTimeAndRoute";
 import TicketTypeAndLogo from "./TicketTypeAndLogo";
 
-
 type ITwoWayTicketProps = {
-    tickets: ITwoWayTicket;
-}
+  tickets: ITwoWayTicket;
+};
 
-const TwoWayTicket: FC<ITwoWayTicketProps> = ({tickets}) => {
+const TwoWayTicket: FC<ITwoWayTicketProps> = ({ tickets }) => {
   const ticket = tickets.ticket;
   const returnTicket = tickets.returnTicket;
 
   return (
     <>
       <div className={s.ticketsWrapper}>
-
         <div className={s.ticketsInfoWrapper}>
           <div className={s.ticketBody}>
             <div className={s.TicketleftSide}>
@@ -46,7 +44,7 @@ const TwoWayTicket: FC<ITwoWayTicketProps> = ({tickets}) => {
                 companyName={returnTicket.companyName}
               />
             </div>
-            <div className={[s.TicketCenterSide, s.dash].join(' ')}>
+            <div className={[s.TicketCenterSide, s.dash].join(" ")}>
               <div className={s.mainUpCenterFlex}>
                 <TicketTimeAndRoute
                   departure={returnTicket.departure}
@@ -66,7 +64,6 @@ const TwoWayTicket: FC<ITwoWayTicketProps> = ({tickets}) => {
             )}
           </div>
         </div>
-
       </div>
     </>
   );

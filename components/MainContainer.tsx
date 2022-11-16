@@ -23,7 +23,7 @@ const MainContainer: FC<layoutProps> = ({ children }) => {
     <>
       <Head>{/* some metatags */}</Head>
       <header className={s.header}>
-        <nav>
+        <nav className={s.navigation}>
           <Link style={lincActive(AVIA)} className={s.link} href={AVIA}>Поиск</Link>
           <Link style={lincActive(AVIA_INFO)} className={s.link} href={AVIA_INFO}>Карточка перелёта</Link>
         </nav>
